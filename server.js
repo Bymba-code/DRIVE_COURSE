@@ -22,7 +22,9 @@ const corsOptions = {
         "https://system.tsogttsug.com",
         "http://system.tsogttsug.com",
         "https://tsogttsug.com",
-        "https://student.tsogttsug.com" // ← энэ тасарсан байсан
+        "https://student.tsogttsug.com",
+        "https://student.amgalanjoloo.com",
+        "https://system.amgalanjoloo.com",
     ],
     methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
     allowedHeaders: ["Content-Type", "Authorization"],
@@ -51,3 +53,4 @@ app.use("/api/v1", userCategoryRouter)
 app.listen(process.env.PORT , () => {
     console.log("APP LISTENING " + " " + process.env.PORT)
 })
+
